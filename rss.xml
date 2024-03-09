@@ -1,34 +1,38 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>叁伍肆玖</title>
-    <link href="http://example.com" />
-    <updated>2024-03-09T09:35:35.000Z</updated>
-    <entry>
-        <id>http://example.com/2024/03/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
-        <title>我的第二篇博客</title>
-        <link rel="alternate" href="http://example.com/2024/03/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-        <content type="html"></content>
-        <updated>2024-03-09T09:35:35.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2024/03/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</id>
-        <title>我的第一篇博客文章</title>
-        <link rel="alternate" href="http://example.com/2024/03/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-        <content type="html">&lt;h2 id=&#34;第一章&#34;&gt;&lt;a href=&#34;#第一章&#34; class=&#34;headerlink&#34; title=&#34;第一章&#34;&gt;&lt;/a&gt;第一章&lt;/h2&gt;&lt;p&gt;内容&lt;/p&gt;
+<rss version="2.0">
+    <channel>
+        <title>叁伍肆玖</title>
+        <link>http://example.com</link>
+        <description>博客</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 09 Mar 2024 17:35:35 +0800</pubDate>
+        <lastBuildDate>Sat, 09 Mar 2024 17:35:35 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/03/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+            <title>我的第二篇博客</title>
+            <link>http://example.com/2024/03/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+            <pubDate>Sat, 09 Mar 2024 17:35:35 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/03/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</guid>
+            <title>我的第一篇博客文章</title>
+            <link>http://example.com/2024/03/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</link>
+            <pubDate>Wed, 06 Mar 2024 17:54:21 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;第一章&#34;&gt;&lt;a href=&#34;#第一章&#34; class=&#34;headerlink&#34; title=&#34;第一章&#34;&gt;&lt;/a&gt;第一章&lt;/h2&gt;&lt;p&gt;内容&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;第二章&#34;&gt;&lt;a href=&#34;#第二章&#34; class=&#34;headerlink&#34; title=&#34;第二章&#34;&gt;&lt;/a&gt;第二章&lt;/h2&gt;&lt;p&gt;内容&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;##参考文献&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.google.com/&#34;&gt;www.google.com&lt;/a&gt;&lt;/p&gt;
-</content>
-        <updated>2024-03-06T09:54:21.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2024/03/06/hello-world/</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="http://example.com/2024/03/06/hello-world/"/>
-        <content type="html">&lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/03/06/hello-world/</guid>
+            <title>Hello World</title>
+            <link>http://example.com/2024/03/06/hello-world/</link>
+            <pubDate>Wed, 06 Mar 2024 17:51:43 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
@@ -41,7 +45,7 @@
 &lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-        <updated>2024-03-06T09:51:43.251Z</updated>
-    </entry>
-</feed>
+ ]]></description>
+        </item>
+    </channel>
+</rss>
