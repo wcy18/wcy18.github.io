@@ -4,6 +4,7 @@
     <title>叁伍肆玖</title>
     <link href="http://example.com" />
     <updated>2024-03-09T09:35:35.000Z</updated>
+    <category term="博客搭建" />
     <entry>
         <id>http://example.com/2024/03/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
         <title>我的第二篇博客</title>
@@ -12,16 +13,46 @@
         <updated>2024-03-09T09:35:35.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2024/03/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</id>
-        <title>我的第一篇博客文章</title>
-        <link rel="alternate" href="http://example.com/2024/03/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-        <content type="html">&lt;h2 id=&#34;第一章&#34;&gt;&lt;a href=&#34;#第一章&#34; class=&#34;headerlink&#34; title=&#34;第一章&#34;&gt;&lt;/a&gt;第一章&lt;/h2&gt;&lt;p&gt;内容&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;第二章&#34;&gt;&lt;a href=&#34;#第二章&#34; class=&#34;headerlink&#34; title=&#34;第二章&#34;&gt;&lt;/a&gt;第二章&lt;/h2&gt;&lt;p&gt;内容&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;##参考文献&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.google.com/&#34;&gt;www.google.com&lt;/a&gt;&lt;/p&gt;
+        <id>http://example.com/2024/03/06/%E4%BD%BF%E7%94%A8Hexo%20+%20Github%20Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+        <title>使用Hexo + Github Pages搭建个人博客</title>
+        <link rel="alternate" href="http://example.com/2024/03/06/%E4%BD%BF%E7%94%A8Hexo%20+%20Github%20Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+        <content type="html">&lt;h4 id=&#34;安装Node-js和Hexo&#34;&gt;&lt;a href=&#34;#安装Node-js和Hexo&#34; class=&#34;headerlink&#34; title=&#34;安装Node.js和Hexo&#34;&gt;&lt;/a&gt;安装Node.js和Hexo&lt;/h4&gt;&lt;p&gt;因为Hexo需要Node.js生成，所以先安装Node.js&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;brew install node &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;node -v&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm -v #包管理器&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;安装hexo (全局安装可能需要管理员权限，npm前加sudo)&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;使用hexo生成博客&#34;&gt;&lt;a href=&#34;#使用hexo生成博客&#34; class=&#34;headerlink&#34; title=&#34;使用hexo生成博客&#34;&gt;&lt;/a&gt;使用hexo生成博客&lt;/h4&gt;&lt;p&gt;首先创建一个空的文件夹用于生成博客&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pwd #显示当前工作目录&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mkdir blog&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;初始化(initialization)一个博客&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cd blog #切换目录到blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo init #初始化博客&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;启动博客&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo s #在本地服务器server启动博客&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;创建第一篇博客文章&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo n &amp;quot;我的第一篇博客文章&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vim 我的第一篇博客文章.md #使用markdown语法添加内容&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo clean #清除Hexo生成的临时数据（文件和缓存）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo g #生成generate网页静态文件，将网页源文件（markdown文件、模版和相关配置文件）转换成静态的HTML文件以及相关的CSS和JS文件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo s #运行服务器&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;将博客部署到GitHub&#34;&gt;&lt;a href=&#34;#将博客部署到GitHub&#34; class=&#34;headerlink&#34; title=&#34;将博客部署到GitHub&#34;&gt;&lt;/a&gt;将博客部署到GitHub&lt;/h4&gt;&lt;p&gt;在Github上创建仓库，用户部署个人博客的GitHub仓库的命名必须符合规范：wcy18(用户名).github.io&lt;br&gt;接着在blog目录安装Git部署插件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install --save hexo-deployer-git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;编辑_config.yml文件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vim _config.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta prompt_&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt;按以下格式编辑，repo的地址在Github个人博客仓库HTTPS&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deploy: &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  type: &amp;#x27;git&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  repo: https://github.com/wcy18/wcy18.github.io.git &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;部署到远端&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo d # 部署推送deploy到远端&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;注意：输入密码时如果输的是Github账户密码会报错：鉴权失败。这里需要输入GitHub个人密钥PAT(Personal access tokens)，在主页的开发者设置里生成，可以设置权限和时长，记得截图保存&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：部署完进入GitHub主页更新仓库才会立即更新博客网页，使用command+shift+R强制刷新浏览器也可以解决部署完网页未发生变化或者出现404报错的问题&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
+        <category term="博客搭建" />
         <updated>2024-03-06T09:54:21.000Z</updated>
     </entry>
     <entry>
