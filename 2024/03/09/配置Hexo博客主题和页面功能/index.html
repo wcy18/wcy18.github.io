@@ -41,7 +41,17 @@ html.dataset.dark = localStorage.dark;
 <ul>
 <li>如果创建的标签页面，将页面的layout设置为<code>layout: tagcloud</code>即可。若需要单栏页面，就将layout设置为 <code>layout: single-column</code>。</li>
 </ul>
-<h2 id="添加文章摘要-目录-评论-数学公式"><a href="#添加文章摘要-目录-评论-数学公式" class="headerlink" title="添加文章摘要&#x2F;目录&#x2F;评论&#x2F;数学公式"></a>添加文章摘要&#x2F;目录&#x2F;评论&#x2F;数学公式</h2><h2 id="更换网页背景动态效果"><a href="#更换网页背景动态效果" class="headerlink" title="更换网页背景动态效果"></a>更换网页背景动态效果</h2><p>使用<a target="_blank" rel="noopener" href="https://github.com/hustcc/canvas-nest.js">canvas_nest</a>效果，只需把根目录的<code>_config.yml</code>中canvas_nest改为true即可</p>
+<h2 id="添加文章摘要-目录-评论-数学公式"><a href="#添加文章摘要-目录-评论-数学公式" class="headerlink" title="添加文章摘要&#x2F;目录&#x2F;评论&#x2F;数学公式"></a>添加文章摘要&#x2F;目录&#x2F;评论&#x2F;数学公式</h2><ul>
+<li><p>首页默认显示文章摘要而非全文，可以在文章的<code>front-matter</code>中使用<code>description:</code>来设置显示的摘要</p>
+</li>
+<li><p>在文章的<code>front-matter</code>中添加<code>toc: true</code>即可让该篇文章显示目录。</p>
+</li>
+<li><p>文章的评论功能可以在<code>front-matter</code>中设置<code>comments: true</code>或<code>comments: false</code>来进行开启关闭</p>
+</li>
+<li><p>要启用数学公式支持，可以在Hexo目录的<code>_config.yml</code>中添加<code>mathjax: true</code>，并在相应文章的<code>front-matter</code>中添加<code>mathjax: true</code>。数学公式的默认定界符是<code>$$...$$</code>和<code>\\[...\\]</code>（对于块级公式），以及<code>$...$</code>和<code>\\(...\\)</code>（对于行内公式）</p>
+</li>
+</ul>
+<h2 id="更换网页背景动态效果"><a href="#更换网页背景动态效果" class="headerlink" title="更换网页背景动态效果"></a>更换网页背景动态效果</h2><p>使用<a target="_blank" rel="noopener" href="https://github.com/hustcc/canvas-nest.js">canvas_nest</a>效果，只需把根目录的<code>_config.yml</code>中canvas_nest改为true即可</p>
 <img src="https://sanwusijiu.oss-cn-hangzhou.aliyuncs.com/Typora/screenshot.png"  />
 本网站背景动态效果采用的是[Vanta.js](https://www.vantajs.com/)的clouds效果，添加方式也很简单，只需把网页右上角生成的样式代码添加到maupassant/layout/_partial目录下的`head.pug`文件，以下是示例
 
