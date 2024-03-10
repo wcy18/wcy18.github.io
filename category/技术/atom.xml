@@ -33,14 +33,10 @@
 &lt;li&gt;如果创建的标签页面，将页面的layout设置为&lt;code&gt;layout: tagcloud&lt;/code&gt;即可。若需要单栏页面，就将layout设置为 &lt;code&gt;layout: single-column&lt;/code&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;添加文章摘要-目录-评论-数学公式&#34;&gt;&lt;a href=&#34;#添加文章摘要-目录-评论-数学公式&#34; class=&#34;headerlink&#34; title=&#34;添加文章摘要&amp;#x2F;目录&amp;#x2F;评论&amp;#x2F;数学公式&#34;&gt;&lt;/a&gt;添加文章摘要&amp;#x2F;目录&amp;#x2F;评论&amp;#x2F;数学公式&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;首页默认显示文章摘要而非全文，可以在文章的&lt;code&gt;front-matter&lt;/code&gt;中使用&lt;code&gt;description:&lt;/code&gt;来设置显示的摘要&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在文章的&lt;code&gt;front-matter&lt;/code&gt;中添加&lt;code&gt;toc: true&lt;/code&gt;即可让该篇文章显示目录。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;文章的评论功能可以在&lt;code&gt;front-matter&lt;/code&gt;中设置&lt;code&gt;comments: true&lt;/code&gt;或&lt;code&gt;comments: false&lt;/code&gt;来进行开启关闭&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;要启用数学公式支持，可以在Hexo目录的&lt;code&gt;_config.yml&lt;/code&gt;中添加&lt;code&gt;mathjax: true&lt;/code&gt;，并在相应文章的&lt;code&gt;front-matter&lt;/code&gt;中添加&lt;code&gt;mathjax: true&lt;/code&gt;。数学公式的默认定界符是&lt;code&gt;$$...$$&lt;/code&gt;和&lt;code&gt;\\[...\\]&lt;/code&gt;（对于块级公式），以及&lt;code&gt;$...$&lt;/code&gt;和&lt;code&gt;\\(...\\)&lt;/code&gt;（对于行内公式）&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;首页默认显示文章摘要而非全文，可以在文章的&lt;code&gt;front-matter&lt;/code&gt;中使用&lt;code&gt;description:&lt;/code&gt;来设置显示的摘要&lt;/li&gt;
+&lt;li&gt;在文章的&lt;code&gt;front-matter&lt;/code&gt;中添加&lt;code&gt;toc: true&lt;/code&gt;即可让该篇文章显示目录。&lt;/li&gt;
+&lt;li&gt;文章的评论功能可以在&lt;code&gt;front-matter&lt;/code&gt;中设置&lt;code&gt;comments: true&lt;/code&gt;或&lt;code&gt;comments: false&lt;/code&gt;来进行开启关闭&lt;/li&gt;
+&lt;li&gt;要启用数学公式支持，可以在Hexo目录的&lt;code&gt;_config.yml&lt;/code&gt;中添加&lt;code&gt;mathjax: true&lt;/code&gt;，并在相应文章的&lt;code&gt;front-matter&lt;/code&gt;中添加&lt;code&gt;mathjax: true&lt;/code&gt;。数学公式的默认定界符是&lt;code&gt;$$...$$&lt;/code&gt;和&lt;code&gt;\\[...\\]&lt;/code&gt;（对于块级公式），以及&lt;code&gt;$...$&lt;/code&gt;和&lt;code&gt;\\(...\\)&lt;/code&gt;（对于行内公式）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;更换网页背景动态效果&#34;&gt;&lt;a href=&#34;#更换网页背景动态效果&#34; class=&#34;headerlink&#34; title=&#34;更换网页背景动态效果&#34;&gt;&lt;/a&gt;更换网页背景动态效果&lt;/h2&gt;&lt;p&gt;使用&lt;a href=&#34;https://github.com/hustcc/canvas-nest.js&#34;&gt;canvas_nest&lt;/a&gt;效果，只需把根目录的&lt;code&gt;_config.yml&lt;/code&gt;中canvas_nest改为true即可&lt;/p&gt;
 &lt;img src=&#34;https://sanwusijiu.oss-cn-hangzhou.aliyuncs.com/Typora/screenshot.png&#34;  /&gt;
