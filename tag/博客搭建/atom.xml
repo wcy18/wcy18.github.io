@@ -16,16 +16,22 @@
 &lt;h4 id=&#34;网页语言-头像-个签-链接-导航栏的设置&#34;&gt;&lt;a href=&#34;#网页语言-头像-个签-链接-导航栏的设置&#34; class=&#34;headerlink&#34; title=&#34;网页语言&amp;#x2F;头像&amp;#x2F;个签&amp;#x2F;链接&amp;#x2F;导航栏的设置&#34;&gt;&lt;/a&gt;网页语言&amp;#x2F;头像&amp;#x2F;个签&amp;#x2F;链接&amp;#x2F;导航栏的设置&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;在根目录下的&lt;code&gt;_config.yml&lt;/code&gt;修改标题、副标题和语言(zh-CN)&lt;/li&gt;
 &lt;li&gt;在blog&amp;#x2F;themes&amp;#x2F;maupassant&amp;#x2F;source&amp;#x2F;img&amp;#x2F;avatar.png目录下修改头像，替换原有的png文件即可&lt;/li&gt;
-&lt;li&gt;在blog&amp;#x2F;themes&amp;#x2F;maupassant下的&lt;code&gt;_config.yml&lt;/code&gt;修改info和links部分，来改变个签和链接。同时修改menu部分，来修改导航栏的标签顺序。新的页面创建直接使用命令行即可，打开新页面文件夹下&lt;code&gt;index.md&lt;/code&gt;文件修改新页面样式&lt;/li&gt;
+&lt;li&gt;在blog&amp;#x2F;themes&amp;#x2F;maupassant下的&lt;code&gt;_config.yml&lt;/code&gt;修改info和links部分，来改变个签和链接。同时修改menu部分，来修改导航栏。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：邮件地址前应该加mailto:才有效&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;添加页面&#34;&gt;&lt;a href=&#34;#添加页面&#34; class=&#34;headerlink&#34; title=&#34;添加页面&#34;&gt;&lt;/a&gt;添加页面&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;新的页面创建直接使用命令行即可，并在&lt;code&gt;index.md&lt;/code&gt;的&lt;code&gt;front-matter&lt;/code&gt;中设置layout为&lt;code&gt;layout: page&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo new pages &lt;span class=&#34;string&#34;&gt;&amp;quot;tags&amp;quot;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#创建标签页面&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;注意：邮件地址前应该加mailto:才有效&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
 &lt;p&gt;注意：创建新页面必须在blog文件夹下进行&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果创建的标签页面，将页面的layout设置为&lt;code&gt;layout: tagcloud&lt;/code&gt;即可。若需要单栏页面，就将layout设置为 &lt;code&gt;layout: single-column&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h4 id=&#34;更换网页背景动态效果&#34;&gt;&lt;a href=&#34;#更换网页背景动态效果&#34; class=&#34;headerlink&#34; title=&#34;更换网页背景动态效果&#34;&gt;&lt;/a&gt;更换网页背景动态效果&lt;/h4&gt;&lt;p&gt;使用&lt;a href=&#34;https://github.com/hustcc/canvas-nest.js&#34;&gt;canvas_nest&lt;/a&gt;效果，只需把根目录的&lt;code&gt;_config.yml&lt;/code&gt;中canvas_nest改为true即可&lt;/p&gt;
 &lt;img src=&#34;https://sanwusijiu.oss-cn-hangzhou.aliyuncs.com/Typora/screenshot.png&#34;  /&gt;
 本网站背景动态效果采用的是[Vanta.js](https://www.vantajs.com/)的clouds效果，添加方式也很简单，只需把网页右上角生成的样式代码添加到maupassant/layout/_partial目录下的`head.pug`文件，以下是示例

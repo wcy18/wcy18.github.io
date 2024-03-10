@@ -25,16 +25,22 @@ html.dataset.dark = localStorage.dark;
 <h4 id="网页语言-头像-个签-链接-导航栏的设置"><a href="#网页语言-头像-个签-链接-导航栏的设置" class="headerlink" title="网页语言&#x2F;头像&#x2F;个签&#x2F;链接&#x2F;导航栏的设置"></a>网页语言&#x2F;头像&#x2F;个签&#x2F;链接&#x2F;导航栏的设置</h4><ul>
 <li>在根目录下的<code>_config.yml</code>修改标题、副标题和语言(zh-CN)</li>
 <li>在blog&#x2F;themes&#x2F;maupassant&#x2F;source&#x2F;img&#x2F;avatar.png目录下修改头像，替换原有的png文件即可</li>
-<li>在blog&#x2F;themes&#x2F;maupassant下的<code>_config.yml</code>修改info和links部分，来改变个签和链接。同时修改menu部分，来修改导航栏的标签顺序。新的页面创建直接使用命令行即可，打开新页面文件夹下<code>index.md</code>文件修改新页面样式</li>
+<li>在blog&#x2F;themes&#x2F;maupassant下的<code>_config.yml</code>修改info和links部分，来改变个签和链接。同时修改menu部分，来修改导航栏。</li>
+</ul>
+<blockquote>
+<p>注意：邮件地址前应该加mailto:才有效</p>
+</blockquote>
+<h4 id="添加页面"><a href="#添加页面" class="headerlink" title="添加页面"></a>添加页面</h4><ul>
+<li>新的页面创建直接使用命令行即可，并在<code>index.md</code>的<code>front-matter</code>中设置layout为<code>layout: page</code></li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new pages <span class="string">&quot;tags&quot;</span> <span class="comment">#创建标签页面</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>注意：邮件地址前应该加mailto:才有效</p>
-</blockquote>
-<blockquote>
 <p>注意：创建新页面必须在blog文件夹下进行</p>
 </blockquote>
+<ul>
+<li>如果创建的标签页面，将页面的layout设置为<code>layout: tagcloud</code>即可。若需要单栏页面，就将layout设置为 <code>layout: single-column</code>。</li>
+</ul>
 <h4 id="更换网页背景动态效果"><a href="#更换网页背景动态效果" class="headerlink" title="更换网页背景动态效果"></a>更换网页背景动态效果</h4><p>使用<a target="_blank" rel="noopener" href="https://github.com/hustcc/canvas-nest.js">canvas_nest</a>效果，只需把根目录的<code>_config.yml</code>中canvas_nest改为true即可</p>
 <img src="https://sanwusijiu.oss-cn-hangzhou.aliyuncs.com/Typora/screenshot.png"  />
 本网站背景动态效果采用的是[Vanta.js](https://www.vantajs.com/)的clouds效果，添加方式也很简单，只需把网页右上角生成的样式代码添加到maupassant/layout/_partial目录下的`head.pug`文件，以下是示例
