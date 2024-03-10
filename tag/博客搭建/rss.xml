@@ -5,9 +5,17 @@
         <link>http://example.com</link>
         <description>博客</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 06 Mar 2024 17:54:21 +0800</pubDate>
-        <lastBuildDate>Wed, 06 Mar 2024 17:54:21 +0800</lastBuildDate>
+        <pubDate>Sat, 09 Mar 2024 17:35:35 +0800</pubDate>
+        <lastBuildDate>Sat, 09 Mar 2024 17:35:35 +0800</lastBuildDate>
         <category>博客搭建</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/03/09/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E5%92%8C%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/</guid>
+            <title>配置博客主题和页面功能</title>
+            <link>http://example.com/2024/03/09/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E5%92%8C%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/</link>
+            <category>博客搭建</category>
+            <pubDate>Sat, 09 Mar 2024 17:35:35 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2024/03/06/%E4%BD%BF%E7%94%A8Hexo%20+%20Github%20Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
             <title>使用Hexo + Github Pages搭建个人博客</title>
