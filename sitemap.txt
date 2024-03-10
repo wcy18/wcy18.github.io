@@ -4,3 +4,4 @@ http://example.com/tags/index.html
 http://example.com/about/index.html
 http://example.com/
 http://example.com/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
+http://example.com/categories/%E6%8A%80%E6%9C%AF/
